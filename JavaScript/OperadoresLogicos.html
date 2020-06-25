@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript - Rocketseat</title>
+  </head>
+  <body>
+    <script>
+      // JavaScript - como padrão deixar sempre o JS como ultimo elemento antes de fechar o body
+
+      // AND, OR, NOT
+
+      var sexo = 'M',
+        idade = 20;
+
+      // Exemplo com AND
+      if (sexo === 'M' && idade >= 18) {
+        // Neste caso tem que atender as duas condições (sexo e idade)
+        console.log('Ok');
+      }
+
+      // Exemplo com OR
+      if (sexo === 'F' || idade >= 18) {
+        // Neste caso tem que atender a pelo menos uma condição.
+        console.log('OK!');
+      }
+
+      // Exemplo com o NOT (negação)
+      if (sexo !== 'F') {
+        console.log('OK!!');
+      }
+
+      // Armazenar o valor das condições em variaveis
+      var masculino;
+      if (sexo === 'M') {
+        masculino = true;
+      } else {
+        masculino = false;
+      }
+      console.log(masculino);
+
+      // outra forma de armazenar, utilizando somente uma linha
+      var masculino1 = sexo === 'M';
+      console.log(masculino1);
+    </script>
+  </body>
+</html>
