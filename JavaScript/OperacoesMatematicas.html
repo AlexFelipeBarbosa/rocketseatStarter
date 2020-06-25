@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript - Rocketseat</title>
+  </head>
+  <body>
+    <script>
+      // JavaScript - como padrão deixar sempre o JS como ultimo elemento antes de fechar o body
+
+      var x = 10,
+        y = 5;
+      var soma = x + y;
+      var subtracao = x - y;
+      var divisao = x / y;
+      var multiplicacao = x * y;
+      var modulo = x % y;
+      console.log(
+        'Resultado: ' +
+          'Soma:' +
+          soma +
+          ' Subtração: ' +
+          subtracao +
+          ' Divisão: ' +
+          divisao +
+          ' Multiplicação: ' +
+          multiplicacao +
+          ' Modulo (resto da divisão): ' +
+          modulo
+      );
+
+      // Incrementando o valor de X
+      x += 3;
+      console.log(x);
+
+      // Não podemos somar uma string com um numero (o valor fica errado)
+      var z = '10',
+        w = 5;
+      var resultado1 = z + w;
+      console.log(resultado1); // Neste exemplo mostra 105 (ele concatena)
+    </script>
+  </body>
+</html>
