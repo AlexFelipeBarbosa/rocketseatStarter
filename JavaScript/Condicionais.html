@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript - Rocketseat</title>
+  </head>
+  <body>
+    <script>
+      // JavaScript - como padrão deixar sempre o JS como ultimo elemento antes de fechar o body
+
+      function retornaSexo(sexo) {
+        // M, F
+        // Masculino, Feminino
+
+        // === verifica o valor e o tipo da variavel.
+        if (sexo === 'M') {
+          return 'Masculino';
+        } else if (sexo === 'F') {
+          return 'Feminino';
+        } else {
+          return 'Outro';
+        }
+      }
+
+      // Outro exemplo utilizando o switch case
+      function retornaSexoSwitchCase(sexo) {
+        switch (sexo) {
+          case 'M':
+            return 'Masculino';
+          case 'F':
+            return 'Feminino';
+          default:
+            return 'Outro';
+        }
+      }
+
+      var resultado = retornaSexo('M');
+      console.log(resultado);
+
+      var resultado1 = retornaSexoSwitchCase('F');
+      console.log('retornaSexoSwitchCase: ' + resultado1);
+    </script>
+  </body>
+</html>
