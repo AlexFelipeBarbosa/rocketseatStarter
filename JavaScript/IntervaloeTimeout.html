@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript - Rocketseat</title>
+  </head>
+  <body>
+    <script>
+      // JavaScript - como padrão deixar sempre o JS como ultimo elemento antes de fechar o body
+
+      // Intervalo é alguma função que executa varias vezes dentro de um intervalo.
+      function exibeAlgo() {
+        console.log('Executando...');
+      }
+
+      setInterval(exibeAlgo, 1000); // será executada a cada 1 segundo.
+
+      // Timeout - vai executar apenas uma vez, mas vai dar um 'delay' de tempo
+      function exibeAlgoTimeout() {
+        console.log('Executando com Timeout...');
+      }
+      setTimeout(exibeAlgoTimeout, 5000); //irá aguardar 5 segundos pra ser executada.
+    </script>
+  </body>
+</html>
