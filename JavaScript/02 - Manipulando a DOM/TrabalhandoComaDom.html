@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript - Rocketseat</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" name="nome" id="nome" class="nome" />
+      <input type="text" name="nome2" id="nome2" class="nome2" />
+      <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+      //  var inputElement = document.getElementById('nome'); // busque o elemento com o Id nome
+      // var inputElement = document.getElementsByTagName('input'); // busca o elemento pela tag
+      // var inputElement = document.getElementsByClassName('nome'); // busca o elemento pelo class
+
+      /* o Script abaixo é o mais utilizado!!!!
+        o querySelector --> sempre vai retornar um unico elemento.
+          ou seja, se eu tiver dois inputs ele sempre retorna o primeiro. 
+
+       o querySelectorAll --> retorna mais de um elemento.  
+
+      */
+      // var inputElement = document.querySelector('div#app input'); // permite percorrer a DOM até encontrar o elemento
+      // var inputElement = document.querySelector('input[name=nome]');
+      //var inputElement = document.querySelector('input'); // retorna somente o primeiro input.
+      var inputElement = document.querySelectorAll('input'); // retorna a lista de elementos
+
+      /* Referenciando as funções de elemento dentro do JavaScript */
+      var inputElement1 = document.querySelector('input[name=nome]');
+      var btnElement = document.querySelector('button.botao');
+
+      btnElement.onclick = function () {
+        // mostrar dentro do alert o texto escrito dentro do botão
+        var text = inputElement1.value;
+        alert(text);
+      };
+
+      console.log(inputElement);
+    </script>
+  </body>
+</html>

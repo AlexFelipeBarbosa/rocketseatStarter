@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript - Rocketseat</title>
+  </head>
+  <body>
+    <div id="app">
+      <button onmouseover="mostraAlerta()">Me pressione</button>
+      <br /><br />
+      <button onclick="mostraAlerta()">Me pressione</button>
+      <br /><br />
+      <input onkeypress="mostraAlerta()" />
+    </div>
+    <script>
+      function mostraAlerta() {
+        alert('Botão foi clicado!');
+      }
+    </script>
+  </body>
+</html>

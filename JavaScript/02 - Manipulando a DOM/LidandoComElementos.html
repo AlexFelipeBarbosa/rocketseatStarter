@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso JavaScript - Rocketseat</title>
+  </head>
+  <body>
+    <div id="app">
+      <input id="nome" />
+    </div>
+    <script>
+      // É possivel criar novos elementos através do JavaScript
+
+      /* Criando um Link */
+      var linkElement = document.createElement('a');
+      linkElement.setAttribute('href', 'http://www.alexbarbosa.info');
+      linkElement.setAttribute('title', 'Blog do Alex');
+
+      /* Criando um texto */
+      var textElement = document.createTextNode('Acessando o blog do Alex');
+
+      /* Posicionando o texto dentro do elemento com o Link */
+      linkElement.appendChild(textElement);
+
+      /* Colocando o elemento criado dentro do corpo do HTML */
+      var containerElement = document.querySelector('#app');
+      containerElement.appendChild(linkElement);
+
+      /* Removendo */
+
+      var inputElement = document.querySelector('#nome');
+      containerElement.removeChild(inputElement);
+    </script>
+  </body>
+</html>
