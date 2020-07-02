@@ -1,30 +1,9 @@
-class List {
-  constructor() {
-    this.data = [];
-  }
+/* No caso abaixo a soma é default */
+//import soma, { sub } from './funcoes';
 
-  add(data) {
-    this.data.push(data);
-    console.log(this.data);
-  }
-}
+// importando tudo
+import * as funcoes from './funcoes';
 
-/* Herança --> A classe TodoList herda da classe List */
-class TodoList extends List {
-  constructor() {
-    super();
-    this.usuario = 'Alex Barbosa';
-  }
-
-  mostrarUsuario() {
-    console.log(this.usuario);
-  }
-}
-
-const MinhaLista = new TodoList();
-
-document.getElementById('novotodo').onclick = function () {
-  MinhaLista.add('Novo registro');
-};
-
-MinhaLista.mostrarUsuario();
+console.log(funcoes.soma(1, 2));
+console.log(funcoes.sub(10, 5));
+console.log(funcoes.mult(15, 15));
